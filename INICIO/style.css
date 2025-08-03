@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+/* BANNER */
+.banner {
+  background-image: url(https://i.postimg.cc/BQxnR9nt/Whats-App-Image-2024-11-22-at-9-12-20-AM-2-1068x855.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* MENÚ */
+nav {
+  background-color: #ff9966;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu > li:hover {
+  background-color: #e67e22;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #ff9966;
+  list-style: none;
+  z-index: 1;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  display: block;
+}
+
+/* NOTICIAS - Grid Responsive */
+.noticias {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas de noticia */
+.noticia {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.noticia:hover {
+  transform: scale(1.02);
+}
+
+.noticia img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.noticia h3 {
+  color: #ff7f50;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.noticia p {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* NOTICIA DESTACADA */
+.destacada {
+  background-color: #fef3e7;
+  border: 2px solid #ff8c42;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1; /* Ocupa todo el ancho de la grid */
+  justify-items: center;
+  text-align: center;
+}
+
+.destacada img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.destacada .contenido h2 {
+  font-size: 2em;
+  color: #e65100;
+  margin-bottom: 15px;
+}
+
+.destacada .contenido p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+.destacada .mensaje {
+  font-weight: bold;
+  color: #c62828;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* COLORES PERSONALIZADOS POR CLASE */
+.firulais     { background-color: #ffe5e0; }
+.vacunacion   { background-color: #e0f7fa; }
+.mishi        { background-color: #fff0c2; }
+.luna         { background-color: #f0eaff; }
+.max          { background-color: #d0f0c0; }
+.pelusa       { background-color: #ffe0f0; }
+.abrigo       { background-color: #e6f7ff; }
+.dientes      { background-color: #fff3e0; }
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ff9966;
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES para RESPONSIVE EXTRA */
+@media (max-width: 480px) {
+  .banner {
+    font-size: 2em;
+    height: 250px;
+    padding: 0 10px;
+  }
+
+  .destacada .contenido h2 {
+    font-size: 1.4em;
+  }
+
+  .destacada .contenido p,
+  .destacada .mensaje {
+    font-size: 1em;
+  }
+
+  .menu > li > a {
+    padding: 12px 15px;
+    font-size: 0.9em;
+  }
+}

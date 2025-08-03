@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+/* BANNER */
+.banner {
+  background-image: url(https://i.postimg.cc/BQxnR9nt/Whats-App-Image-2024-11-22-at-9-12-20-AM-2-1068x855.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* MENÚ */
+nav {
+  background-color: #ff9966;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu > li:hover {
+  background-color: #e67e22;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #ff9966;
+  list-style: none;
+  z-index: 1;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  display: block;
+}

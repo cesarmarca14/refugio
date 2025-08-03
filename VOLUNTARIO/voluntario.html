@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patitas Felices - Adopción</title>
+  <link rel="stylesheet" href="../VOLUNTARIO/voluntario.css">
+</head>
+<body>
+
+  <!-- BANNER -->
+  <header class="banner">
+    Patitas Felices: Adopta, Ama, Salva
+  </header>
+
+  <!-- MENÚ -->
+  <nav>
+  <ul class="menu">
+    <li><a href="../INICIO/index.html">Inicio</a></li>
+    <li><a href="../VOLUNTARIO/voluntario.html">Regístrate como Voluntario</a></li>
+    <li><a href="#">Adopta</a>
+      <ul class="submenu">
+        <li><a href="../ADOPTA/gatitos.html">Gatitos</a></li>
+        <li><a href="../ADOPTA/perritos.html">Perritos</a></li>
+      </ul>
+    </li>
+    <li><a href="../NOSOTROS/nosotros.html">Nosotros</a></li>
+    <li><a href="../DONACIONES/donaciones.html">Donaciones</a></li>
+    <li><a href="../CONTACTO/contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<section class="form-voluntario">
+  <h2>Formulario de Inscripción al Voluntariado</h2>
+  <p>Únete a nuestro equipo y ayúdanos a salvar más vidas. Completa el formulario con tus datos:</p>
+
+  <form action="#" method="post" class="formulario">
+    <div class="form-grid">
+      <div class="campo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="campo">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+      </div>
+
+      <div class="campo">
+  <label for="tipo-documento">Tipo de documento:</label>
+  <select id="tipo-documento" name="tipo-documento" required>
+    <option value="">Selecciona una opción</option>
+    <option value="dni">DNI</option>
+    <option value="ce">Carné de Extranjería</option>
+  </select>
+</div>
+
+<div class="campo">
+  <label for="numero-documento">Número de documento:</label>
+  <input type="text" id="numero-documento" name="numero-documento" required placeholder="Ej: 12345678 o EX123456789">
+</div>
+
+      <div class="campo">
+  <label for="direccion">¿En qué distrito de Lima vives?</label>
+  <select id="direccion" name="direccion" required>
+    <option value="">Selecciona tu distrito</option>
+    <option value="Ate">Ate</option>
+    <option value="Barranco">Barranco</option>
+    <option value="Breña">Breña</option>
+    <option value="Carabayllo">Carabayllo</option>
+    <option value="Cercado de Lima">Cercado de Lima</option>
+    <option value="Chaclacayo">Chaclacayo</option>
+    <option value="Chorrillos">Chorrillos</option>
+    <option value="Cieneguilla">Cieneguilla</option>
+    <option value="Comas">Comas</option>
+    <option value="El Agustino">El Agustino</option>
+    <option value="Independencia">Independencia</option>
+    <option value="Jesús María">Jesús María</option>
+    <option value="La Molina">La Molina</option>
+    <option value="La Victoria">La Victoria</option>
+    <option value="Lince">Lince</option>
+    <option value="Los Olivos">Los Olivos</option>
+    <option value="Lurigancho">Lurigancho</option>
+    <option value="Lurín">Lurín</option>
+    <option value="Magdalena del Mar">Magdalena del Mar</option>
+    <option value="Miraflores">Miraflores</option>
+    <option value="Pachacámac">Pachacámac</option>
+    <option value="Pucusana">Pucusana</option>
+    <option value="Pueblo Libre">Pueblo Libre</option>
+    <option value="Puente Piedra">Puente Piedra</option>
+    <option value="Punta Hermosa">Punta Hermosa</option>
+    <option value="Punta Negra">Punta Negra</option>
+    <option value="Rímac">Rímac</option>
+    <option value="San Bartolo">San Bartolo</option>
+    <option value="San Borja">San Borja</option>
+    <option value="San Isidro">San Isidro</option>
+    <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+    <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+    <option value="San Luis">San Luis</option>
+    <option value="San Martín de Porres">San Martín de Porres</option>
+    <option value="San Miguel">San Miguel</option>
+    <option value="Santa Anita">Santa Anita</option>
+    <option value="Santa María del Mar">Santa María del Mar</option>
+    <option value="Santa Rosa">Santa Rosa</option>
+    <option value="Santiago de Surco">Santiago de Surco</option>
+    <option value="Surquillo">Surquillo</option>
+    <option value="Villa El Salvador">Villa El Salvador</option>
+    <option value="Villa María del Triunfo">Villa María del Triunfo</option>
+  </select>
+</div>
+
+      <div class="campo">
+        <label for="adopciones">¿Estás dispuesto/a a adoptar más de dos mascotas?</label>
+        <select id="adopciones" name="adopciones" required>
+          <option value="">Selecciona una opción</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+          <option value="depende">Depende de la situación</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="tiempo">¿Cuánto tiempo puedes dedicar semanalmente?</label>
+        <input type="text" id="tiempo" name="tiempo" placeholder="Ej: 5 horas" required>
+      </div>
+
+      <div class="campo campo-full">
+        <label for="experiencia">¿Tienes experiencia previa en voluntariado o rescate animal?</label>
+        <textarea id="experiencia" name="experiencia" rows="4" placeholder="Cuéntanos un poco..." required></textarea>
+      </div>
+
+      <div class="campo campo-full checkbox">
+        <input type="checkbox" id="compromiso" name="compromiso" required>
+        <label for="compromiso">
+          Acepto los <a href="#">términos y condiciones</a> y me comprometo con responsabilidad al bienestar animal.
+        </label>
+      </div>
+    </div>
+
+    <div class="campo boton">
+      <button type="submit">Enviar Solicitud</button>
+    </div>
+  </form>
+</section>
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Asociación Patitas Felices</p>
+      <p>
+        Correo:
+        <a href="mailto:contacto@patitasfelices.org"
+          >contacto@patitasfelices.org</a
+        >
+      </p>
+      <p>Síguenos en <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
