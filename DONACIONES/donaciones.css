@@ -72,3 +72,134 @@ nav {
   padding: 10px 15px;
   display: block;
 }
+
+.donaciones {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fefdfb;
+  border-radius: 15px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.donaciones h2 {
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.agradecimientos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.agradecimiento {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.agradecimiento.izquierda {
+  flex-direction: row;
+}
+
+.agradecimiento.derecha {
+  flex-direction: row-reverse;
+}
+
+.agradecimiento img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.agradecimiento .texto h3 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.agradecimiento .texto p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.datos-bancarios {
+  background-color: #fdf6e3;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.datos-bancarios h2 {
+  margin-bottom: 15px;
+  color: #e67e22;
+}
+
+.datos-bancarios p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.datos-bancarios ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.datos-bancarios li {
+  color: #444;
+}
+
+.datos-bancarios .nota {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #888;
+}
+
+.simulador-boton {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.simulador-boton button {
+  background-color: #27ae60;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.simulador-boton button:hover {
+  background-color: #219150;
+}
+
+@media screen and (max-width: 768px) {
+  .agradecimiento {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .agradecimiento img {
+    width: 100%;
+    height: auto;
+  }
+}
