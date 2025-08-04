@@ -72,3 +72,243 @@ nav {
   padding: 10px 15px;
   display: block;
 }
+
+.nosotros {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(to bottom, #f9f9f9, #ffe0d3);
+  text-align: center;
+}
+
+.nosotros h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #c24e2b;
+}
+
+.nosotros-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto {
+  max-width: 900px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.texto h3 {
+  color: #c24e2b;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.texto h3:hover {
+  transform: scale(1.05);
+  color: #ff7c5c;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.imagen-dentro-texto {
+  display: block;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.texto ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.texto li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  color: #555;
+  border-left: 4px solid #c24e2b;
+  padding-left: 1rem;
+  max-width: 600px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  overflow-x: auto; /* permite scroll horizontal si no cabe */
+  padding: 10px;
+  width: 100%;
+}
+
+.card {
+  flex: 0 0 300px; /* ancho fijo de 300px, no crece ni se reduce */
+  height: auto;
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.4s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.card p,
+.card ul {
+  font-size: 1em;
+  color: #444;
+  text-align: justify;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 5px;
+}
+
+.card:hover {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  transform: translateY(-5px);
+}
+
+
+.carrusel-manual {
+  position: relative;
+  max-width: 700px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carrusel-contenedor {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrusel-slide {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.img-contenedor {
+  position: relative;
+  width: 100%;
+  height: 400px; /* ALTURA FIJA para todas las imágenes */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta sin deformar */
+  display: block;
+  border-radius: 10px;
+}
+
+/* Texto sobre la imagen */
+.texto-superpuesto {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+/* Flechas */
+.flecha {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.flecha:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.flecha.izquierda {
+  position: absolute;
+  left: 10px;
+}
+
+.flecha.derecha {
+  position: absolute;
+  right: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ff9966;
+  text-decoration: none;
+}
+
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+  }
+  .texto-slide {
+    font-size: 0.9rem;
+    bottom: 10px;
+    left: 10px;
+    padding: 8px 12px;
+  }
+}
