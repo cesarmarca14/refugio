@@ -127,7 +127,9 @@ nav {
 }
 
 .agradecimiento .texto h3 {
-  color: #2c3e50;
+  color: #ff7f50;
+  font-size: 28px;
+  font-weight: bold;
   margin-bottom: 8px;
 }
 

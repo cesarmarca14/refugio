@@ -38,17 +38,16 @@ function vermas1() {
 function vermas5() {
   let noticia = document.querySelector(".noticiaVacunacion");
   if (noticia) {
-    textoOriginal =
+    const textoOriginal =
       "Participamos en una campaña gratuita para vacunar a más de 80 mascotas sin hogar en la ciudad. Gracias a todos los donantes.";
-    textoNuevo =
-  textoOriginal +
-  "<br><strong>¡La jornada fue un éxito y muchas mascotas ahora están protegidas!" +
-  "<br>Gracias al trabajo de voluntarios y donantes, logramos vacunar a decenas de animales que nunca antes habían recibido atención médica." +
-  "<br>Esta campaña salvó vidas y fortaleció el vínculo entre la comunidad y nuestros refugios." +
-  "<br>¡Tu ayuda hace la diferencia!</strong>";
 
+    const textoNuevo =
+      textoOriginal +
+      `<br><strong class="texto-extendido">¡La jornada fue un éxito y muchas mascotas ahora están protegidas!` +
+      `<br>Gracias al trabajo de voluntarios y donantes, logramos vacunar a decenas de animales que nunca antes habían recibido atención médica.` +
+      `<br>Esta campaña salvó vidas y fortaleció el vínculo entre la comunidad y nuestros refugios.` +
+      `<br>¡Tu ayuda hace la diferencia!</strong>`;
 
-      
     if (
       noticia.innerHTML.includes("¡La jornada fue un éxito y muchas mascotas ahora están protegidas!")
     ) {
@@ -58,6 +57,7 @@ function vermas5() {
     }
   }
 }
+
 
 // mishi------
 function vermas9() {
@@ -100,15 +100,18 @@ function vermas9() {
 function vermas6() {
   let noticia = document.querySelector(".noticiaLuna");
   if (noticia) {
-    textoOriginal =
-      "Luna fue encontrada con una pata fracturada. Luego de una cirugía y cuidados intensivos, ya corre y juega con energía.mos en una campaña gratuita para vacunar a más de 80 mascotas sin hogar en la ciudad. Gracias a todos los donantes.";
-    textoNuevo =
+    let textoOriginal =
+      "Luna fue encontrada con una pata fracturada. Luego de una cirugía y cuidados intensivos, ya corre y juega con energía. " +
+      "También participamos en una campaña gratuita para vacunar a más de 80 mascotas sin hogar en la ciudad. Gracias a todos los donantes.";
+
+    let textoNuevo =
       textoOriginal +
-      "<br> <strong>Actualmente disfruta de largos paseos y se ha vuelto la favorita de los voluntarios por su energía.</strong>";
+      `<br><strong class="texto-extendido">Actualmente disfruta de largos paseos y se ha vuelto la favorita de los voluntarios por su energía. ` +
+      `Su recuperación fue sorprendente, y ahora transmite alegría a todo el que la conoce. ` +
+      `Es una perrita valiente y cariñosa que merece un hogar lleno de amor.</strong>`;
+
     if (
-      noticia.innerHTML.includes(
-        "Actualmente disfruta de largos paseos y se ha vuelto la favorita de los voluntarios por su energía."
-      )
+      noticia.innerHTML.includes("Actualmente disfruta de largos paseos y se ha vuelto la favorita de los voluntarios")
     ) {
       noticia.innerHTML = textoOriginal;
     } else {
@@ -116,6 +119,7 @@ function vermas6() {
     }
   }
 }
+
 
 // max------
 function vermas2() {
@@ -187,14 +191,16 @@ function vermas4() {
 function vermas7() {
   let noticia = document.querySelector(".noticiaAbrigo");
   if (noticia) {
-    textoOriginal =
+    let textoOriginal =
       "Junto a voluntarios de la ciudad, repartimos mantas y alimento a perritos sin hogar durante la temporada de frío.";
-    textoNuevo = textoOriginal +
-      "<br> <strong>La campaña logró aliviar las noches frías de muchos peluditos, y seguimos recibiendo donaciones para continuar.</strong>";
+
+    let textoNuevo = textoOriginal +
+      `<br><strong class="texto-extendido">La campaña logró aliviar las noches frías de muchos peluditos, ` +
+      `y seguimos recibiendo donaciones para continuar con esta labor tan necesaria. ` +
+      `Gracias al apoyo de la comunidad, muchos animales hoy duermen más seguros y abrigados.</strong>`;
+
     if (
-      noticia.innerHTML.includes(
-        "La campaña logró aliviar las noches frías de muchos peluditos, y seguimos recibiendo donaciones para continuar."
-      )
+      noticia.innerHTML.includes("La campaña logró aliviar las noches frías de muchos peluditos")
     ) {
       noticia.innerHTML = textoOriginal;
     } else {
@@ -203,19 +209,21 @@ function vermas7() {
   }
 }
 
+
 // noticiaDientes------
 function vermas3() {
   let noticia = document.querySelector(".noticiaDientes");
   if (noticia) {
-    textoOriginal =
+    let textoOriginal =
       "Realizamos limpiezas dentales gratuitas para mascotas adoptadas durante el mes de abril. ¡Una sonrisa sana para todos!";
-    textoNuevo =
-      textoOriginal +
-      "<br> <strong>Este cuidado preventivo ha mejorado la salud de muchos peluditos que ahora disfrutan de una vida más saludable..</strong>";
+
+    let textoNuevo = textoOriginal +
+      `<br><strong class="texto-extendido">Este cuidado preventivo ha mejorado la salud de muchos peluditos ` +
+      `que ahora disfrutan de una vida más saludable. También permitió detectar problemas dentales que podrían haberse complicado, ` +
+      `evitando futuras enfermedades. ¡Seguiremos promoviendo el bienestar integral de nuestros amigos peludos!</strong>`;
+
     if (
-      noticia.innerHTML.includes(
-        "Este cuidado preventivo ha mejorado la salud de muchos peluditos que ahora disfrutan de una vida más saludable."
-      )
+      noticia.innerHTML.includes("Este cuidado preventivo ha mejorado la salud de muchos peluditos")
     ) {
       noticia.innerHTML = textoOriginal;
     } else {
@@ -223,3 +231,4 @@ function vermas3() {
     }
   }
 }
+
