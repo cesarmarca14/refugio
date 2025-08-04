@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Patitas Felices - Adopción</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../carrucel/carrucel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   </head>
   <body>
     <!-- BANNER -->
@@ -30,21 +33,8 @@
       </ul>
     </nav>
 
-    <!-- SECCIÓN DE NOTICIAS -->
     <section class="noticias">
-      <div class="noticia firulais">
-        <img
-          src="https://i.postimg.cc/Dz3DDHmf/61da027f2b767956c8295ffa.webp"
-          alt="Firulais"
-        />
-        <h3>Firulais fue adoptado</h3>
-        <p class="noticiaFiru">
-          Firulais llegó a nosotros desnutrido y asustado. Gracias al amor del
-          equipo y los voluntarios, hoy vive feliz con una familia que lo adora.
-        </p>
-        <button onclick="vermas1()">ver mas..</button>
-      </div>
-
+         
       <div class="noticia vacunacion">
         <img
           src="https://i.postimg.cc/Kzv9h2bb/66b199ea675f467c71153dbb.png"
@@ -55,20 +45,10 @@
           Participamos en una campaña gratuita para vacunar a más de 80 mascotas
           sin hogar en la ciudad. Gracias a todos los donantes.
         </p>
-        <button onclick="vermas2()">ver mas..</button>
-      </div>
+        <button onclick="vermas5()">
+           <i class="fas fa-dog icono-color"></i> Ver más...
+        </button>
 
-      <div class="noticia mishi">
-        <img
-          src="https://i.postimg.cc/c4YPmd4k/IS7-D4-J7-WMFEFPJR2-FK7-HXCWF7-E.jpg"
-          alt="Mishi"
-        />
-        <h3>Conoce a Mishi</h3>
-        <p class="noticiaMishi">
-          Mishi fue rescatada de una caja en la calle. Hoy es una gatita feliz,
-          desparasitada y lista para recibir el amor de una familia adoptiva.
-        </p>
-        <button onclick="vermas3()">ver mas..</button>
       </div>
 
       <div class="noticia luna">
@@ -81,32 +61,12 @@
           Luna fue encontrada con una pata fracturada. Luego de una cirugía y
           cuidados intensivos, ya corre y juega con energía.
         </p>
-        <button onclick="vermas4()">ver mas..</button>
+        <button onclick="vermas6()">
+           <i class="fas fa-dog icono-color"></i> Ver más...
+        </button>
       </div>
 
-      <div class="noticia max">
-        <img
-          src="https://i.postimg.cc/jSRwqdDG/perro-rescatado-calle-151654.jpg"
-          alt="Max"
-        />
-        <h3>Rescate de Max</h3>
-        <p class="noticiaMax">
-          Max fue abandonado en un parque. Lo rescatamos y hoy está en proceso
-          de socialización, esperando un hogar lleno de cariño.
-        </p>
-        <button onclick="vermas5()">ver mas..</button>
-      </div>
-
-      <div class="noticia pelusa">
-        <img src="https://i.postimg.cc/GhhsPmQd/images-5.jpg" alt="Pelusa" />
-        <h3>Historia de Pelusa</h3>
-        <p class="noticiaPelusa" >
-          Pelusa fue rescatada de una azotea. Luego de semanas de atención
-          médica, ya está lista para ser adoptada.
-        </p>
-        <button onclick="vermas6()">ver mas..</button>
-      </div>
-
+      
       <div
         class="noticia abrigo">
         <img src="https://i.postimg.cc/YC72Nnkg/images-6.jpg" alt="Abrigo" />
@@ -115,9 +75,12 @@
           Junto a voluntarios de la ciudad, repartimos mantas y alimento a
           perritos sin hogar durante la temporada de frío.
         </p>
-        <button onclick="vermas7()">ver mas..</button>
+       <button onclick="vermas7()">
+           <i class="fas fa-dog icono-color"></i> Ver más...
+        </button>
       </div>
 
+      
       <div
         class="noticia dientes">
         <img
@@ -129,16 +92,112 @@
           Realizamos limpiezas dentales gratuitas para mascotas adoptadas
           durante el mes de abril. ¡Una sonrisa sana para todos!
         </p>
-        <button onclick="vermas8()">ver mas..</button>
+        <button onclick="vermas3()">
+           <i class="fas fa-dog icono-color"></i> Ver más...
+        </button>
       </div>
 
-      <div class="noticia destacada">
+
+      
+
+
+    </section>
+   
+
+   <!-- CARRUSEL DE REFUGIOS -->
+<section class="carousel-container">
+  <div class="carousel-slide" id="carousel">
+    <!-- Slide 1 -->
+    <div class="slide ">
+      <img src="https://i.postimg.cc/Dz3DDHmf/61da027f2b767956c8295ffa.webp" alt="firulais">
+      <h2>Firulais fue adoptado</h2>
+<p class="noticiaFiru">
+  Firulais fue encontrado en las afueras del mercado central, bajo la lluvia, temblando de frío y con evidentes signos de abandono. 
+  Sus costillas eran visibles y su mirada reflejaba miedo y desconfianza. 
+  Gracias a una llamada de una vecina solidaria, logramos rescatarlo y llevarlo de inmediato a la veterinaria.
+  Firulais fue encontrado en la calle, sin fuerzas, con la mirada triste y el cuerpo muy delgado. 
+  Llegó a nosotros desnutrido y asustado. Gracias al amor del equipo y los voluntarios, hoy vive feliz con una familia que lo adora.
+</p>
+
+      <button onclick="vermas1()">
+           <i class="fas fa-dog icono-color"></i> Ver más...
+        </button>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img src="https://i.postimg.cc/c4YPmd4k/IS7-D4-J7-WMFEFPJR2-FK7-HXCWF7-E.jpg" alt="Refugio 2">
+      <h2>Conoce a Mishi</h2>
+      <p class="noticiaMishi">
+  Mishi fue rescatada de una caja abandonada en la calle, apenas con unas semanas de vida. 
+  Estaba deshidratada, con el pelaje enmarañado y débil por la falta de alimento.
+  Gracias a los cuidados del equipo veterinario y el cariño de nuestros voluntarios, 
+  poco a poco empezó a recuperar fuerzas y a mostrar su lado juguetón.
+  Hoy es una gatita feliz, desparasitada y lista para recibir el amor de una familia adoptiva.
+</p>
+
+<button onclick="vermas9()">
+           <i class="fas fa-dog icono-color"></i> Ver más...
+        </button>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img src="https://i.postimg.cc/jSRwqdDG/perro-rescatado-calle-151654.jpg" alt="Refugio 3">
+      <h2>Rescate de Max</h2>
+      <p class="noticiaMax">
+  Max fue abandonado en un parque, con la mirada triste y el cuerpo cubierto de polvo. 
+  Lo encontramos acurrucado junto a un banco, temblando y sin fuerzas. Apenas tenía energía para caminar, 
+  pero aun así movió la cola cuando nos acercamos. Fue evidente que solo necesitaba una mano amiga. 
+  Desde ese momento, comenzó su camino hacia la recuperación. Gracias al cariño del equipo y al cuidado médico que recibió, 
+  Max empezó a ganar peso, a confiar nuevamente en las personas y a mostrar su lado más noble y juguetón. 
+  Hoy está en proceso de socialización, aprende a convivir con otros perritos y a caminar con correa. 
+  Aunque todavía es un poco tímido con los desconocidos, cada día da un paso más hacia su nuevo futuro. 
+  Está esperando un hogar lleno de cariño donde pueda ser feliz, correr libre y recibir el amor que tanto merece.
+</p>
+
+      <button onclick="vermas2()">
+           <i class="fas fa-dog icono-color"></i> Ver más...
+        </button>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+      <img src="https://i.postimg.cc/GhhsPmQd/images-5.jpg" alt="Pelusa" />
+      <h2>Historia de Pelusa</h2>
+    <p class="noticiaPelusa">
+  Pelusa fue rescatada de una azotea, donde estuvo atrapada durante días sin agua ni comida. 
+  Cuando la encontramos, estaba débil, con el pelaje enmarañado y los ojos tristes. 
+  Gracias a la rápida atención veterinaria y al cuidado constante del equipo, 
+  poco a poco comenzó a recuperar fuerzas y confianza. 
+  Hoy es una gatita saludable, juguetona y muy cariñosa. 
+  Se lleva bien con otros gatos, adora las caricias detrás de las orejas y le encanta dormir en lugares soleados. 
+  Está lista para ser adoptada por una familia que le dé el amor que tanto merece.
+</p>
+
+
+<button onclick="vermas4()">
+           <i class="fas fa-dog icono-color"></i> Ver más...
+        </button>
+    </div>
+  </div>
+
+  <!-- ✅ Botones colocados correctamente FUERA del slide -->
+  <div class="carousel-buttons">
+    <button class="btn" id="prev"><i class="fa-solid fa-circle-chevron-left""></i></button>
+    <button class="btn" id="next"><i class="fa-solid fa-circle-chevron-right"></i></button>
+  </div>
+</section>
+
+
+
+       <div class="noticia destacada">
         <img
           src="https://i.postimg.cc/xCftKSp7/u-X8-EOQLs-IKkk-Ot-I4-NMd5f-ENr7-OKt-XLc-Bzi-JCDo6-A.jpg"
           alt="Únete a la campaña"
         />
         <div class="contenido">
-          <h2>Únete a la campaña: Dona comida, abrigo y amor</h2>
+          <h3>Únete a la campaña: Dona comida, abrigo y amor</h3>
           <p>
             Muchos gatitos y perritos esperan una segunda oportunidad. Tu ayuda
             puede cambiar vidas. Dona alimento, mantitas o colabora como
@@ -150,22 +209,24 @@
           </p>
         </div>
       </div>
-    </section>
+
+
+    <!-- SECCIÓN DE NOTICIAS -->
+    <!-- (Tu sección de noticias sigue aquí tal como está) -->
 
     <!-- FOOTER -->
     <footer>
       <p>© 2025 Asociación Patitas Felices</p>
       <p>
         Correo:
-        <a href="mailto:contacto@patitasfelices.org"
-          >contacto@patitasfelices.org</a
-        >
+        <a href="mailto:contacto@patitasfelices.org">contacto@patitasfelices.org</a>
       </p>
       <p>Síguenos en <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
-      <h2>ya tocaaaaaa ffff</h2>
     </footer>
 
     <!-- JAVASCRIPT -->
     <script src="java.js"></script>
+    <Script src="../carrucel/carrucel.js"></Script>
+  
   </body>
 </html>
